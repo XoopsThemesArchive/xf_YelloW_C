@@ -1,0 +1,22 @@
+body {
+   padding:0;
+   margin: 0;
+}
+#fixedTopMenu {
+   position: absolute;
+   top: expression(body.scrollTop);
+   width: 100%;   
+}
+#fixedTopMenu span {
+   width: 2px;
+}
+#fixedBottomMenu {
+   position: absolute;
+   bottom:0;
+   top: expression(document.body.scrollTop + document.body.clientHeight - this.clientHeight);
+   width: 100%;
+   border: none;
+}
+#fixedBottomMenu input {
+   position: relative;
+}
